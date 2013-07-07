@@ -33,11 +33,6 @@ class @ReactiveObject
   #
   # **name** string as the property name
   defineProperty: (name, value)->
-    Object.defineProperty @, name,
-      configurable: true
-      enumerable: true
-      get: _.bind @_propertyGet, @, name
-      set: _.bind @_propertySet, @, name
     @[name] = value
     return @
 
@@ -108,11 +103,7 @@ class @ReactiveObject
   # **name** string as the name of the property
   # **value** mixed as the value to assign
   _definePrivateProperty: (name, value) ->
-    Object.defineProperty @, name,
-      configurable: true
-      enumerable: false
-      writable: true
-      value: value
+    this[name]  = value
 
 # ## EJSON add ReactiveObject
 # *[EJSON.addType](https://docs.meteor.com/#ejson_add_type)*
