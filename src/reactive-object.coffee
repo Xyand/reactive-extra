@@ -103,6 +103,7 @@ class @ReactiveObject
   # **name** string as the name of the property
   # **value** mixed as the value to assign
   _definePrivateProperty: (name, value) ->
+    console.log("WTF")
     this[name]  = value
 
 # ## EJSON add ReactiveObject
