@@ -2,6 +2,7 @@
   "name": "reactive-extra",
   "description": "Providing reactive classes",
   "author": "Warnar Boekkooi <warnar@boekkooi.net>",
-  "version": "0.0.4.1",
+  "version": "0.0.5",
+  "git": "https://github.com/boekkooi/reactive-extra.git",
   "packages": {}
 }
